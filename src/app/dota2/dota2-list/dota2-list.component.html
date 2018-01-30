@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewDota2Team()">New Team</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-dota2-item
+      *ngFor="let item of dota2teams; let i = index"
+      [dota2team]="item"
+    [index]="i"></app-dota2-item>
+  </div>
+</div>
